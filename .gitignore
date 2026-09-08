@@ -14,3 +14,7 @@ npm-debug.log*
 *.tsbuildinfo
 .idea/
 .vscode/
+
+prompts/
+./prompts
+/prompts
