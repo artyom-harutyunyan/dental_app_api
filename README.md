@@ -11,13 +11,16 @@ Backend API for a single-clinic dental booking system. Staff manage the day queu
 
 ```bash
 npm install
+npm --prefix dev-ui install
 cp .env.example .env
+npm run build:dev-ui
 npm run start:dev
 npm run seed
 ```
 
 API: `http://localhost:3000/api/v1`  
-Swagger: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
+Swagger: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)  
+Dev UI: [http://localhost:3000/dev-ui](http://localhost:3000/dev-ui)
 
 ## Seeded credentials
 

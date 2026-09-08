@@ -14,7 +14,7 @@ import { WorkingHoursPage } from './pages/WorkingHoursPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dev-ui">
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

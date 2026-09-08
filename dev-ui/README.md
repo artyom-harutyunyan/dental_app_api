@@ -2,20 +2,31 @@
 
 Product UI for the Dental Clinic Planner API: patient booking + staff day queue.
 
-## Run
+## Run (served by the API)
+
+Build the UI, then start the API. Nest serves the static build at `/dev-ui`.
 
 ```bash
-# API (repo root)
+# From repo root
+npm --prefix dev-ui install
+npm run build:dev-ui
 npm run start:dev
 npm run seed
+```
 
-# Frontend
+Open [http://localhost:3000/dev-ui](http://localhost:3000/dev-ui).
+
+## Local Vite (optional)
+
+Useful for hot reload while iterating on the UI alone:
+
+```bash
 cd dev-ui
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173 — Vite proxies `/api` to `http://localhost:3000`.
+Open http://localhost:5173/dev-ui/ — Vite proxies `/api` to `http://localhost:3000`.
 
 ## Flows
 

@@ -5,7 +5,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
+    "build": "npm run build:dev-ui && nest build",
+    "build:api": "nest build",
+    "build:dev-ui": "npm --prefix dev-ui run build",
     "format": "prettier --write \"src/**/*.ts\" \"scripts/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
